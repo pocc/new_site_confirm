@@ -1,0 +1,29 @@
+{
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["build/content_script.js"],
+        "run_at": "document_start"
+    }],
+    "background": {
+        "scripts": ["/build/background.js"],
+        "persistent": true
+    },
+    "icons": {
+        "16": "media/logo_16.png",
+        "48": "media/logo_48.png",
+        "128": "media/logo_128.png"
+    },
+    "browser_action": {
+        "default_popup": "build/popup.html",
+        "default_title": "Backlinks to discussions"
+    },
+    "web_accessible_resources": [
+       "src/public_suffix_list.json"
+    ],
+    "manifest_version": 2,
+    "permissions": ["history", "webRequest", "*://*/*"],
+    "author": "Ross Jacobs",
+    "name": "New Site Confirm",
+    "description": "Browser extension to find discussions of your current page",
+    "version": "0.0.1"
+  }
