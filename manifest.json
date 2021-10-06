@@ -4,14 +4,15 @@
         "persistent": true
     },
     "icons": {
-        "16": "new_site_confirm_16.png",
-        "48": "new_site_confirm_48.png",
-        "128": "new_site_confirm_128.png"
+        "16": "waypost_16.png",
+        "48": "waypost_48.png",
+        "128": "waypost_128.png"
     },
+    "web_accessible_resources": ["/blocked.html", "/blocked.js", "/blocked.css", "/waypost.jpg"],
     "manifest_version": 2,
-    "permissions": ["history", "cookies", "tabs", "webRequestBlocking", "webRequest", "*://*/*"],
+    "permissions": ["history", "cookies", "activeTab", "webRequestBlocking", "webRequest", "*://*/*"],
     "author": "Ross Jacobs",
-    "name": "New Site Confirm",
+    "name": "Waypost",
     "description": "Confirm that you want to go to a domain you haven't been to before (checks history and cookies)",
     "version": "0.0.1"
   }

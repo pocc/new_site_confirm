@@ -5,9 +5,9 @@ clean:
 	rm -rf build
 
 build: clean
-	tsc && cp manifest.json media/new_site_confirm_* build
+	tsc && cp manifest.json src/*.html src/*.css media/waypost_* build
 # Delete export lines that ES5 chrome can't understand
 	sed -i '/export {}/d' ./build/*.js
 
-suffixes:
-	python3 src/get_suffixes.py
+release: build
+	zip waypost.zip build/*

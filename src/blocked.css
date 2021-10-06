@@ -1,0 +1,23 @@
+body {
+    background: #fff;
+    color: #2e3436;
+    font: normal 16px "Open Sans", Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center
+}
+a {
+    color: #2ca089;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    width: 400px;
+    margin: 30px;
+}
